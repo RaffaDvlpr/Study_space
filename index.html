@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área de Estudos</title>
+
+    <link rel="stylesheet" href="./main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Quicksand:wght@300&family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1>Área de Estudos (baseado no youtube)</h1>
+        <h4>ver 0.0.1</h4>
+    </header>
+
+    <div class="menus">
+        <nav>
+            <aside class="left_sidebar">
+                <ul>
+                    <h3 for="notes">Anotações</h3>
+                    <textarea cols="42" rows="14"></textarea>
+                </ul>
+            </aside>
+        </nav>
+        <div class="heading">
+            <h2>Área central</h2>
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/CVJekim0HIg?si=F_AvelNVodBb3nI2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <label id="labelnotes" for="notes">Anotações</label>
+            <textarea id="notes" cols="82" rows="10"></textarea>
+        </div>
+        <nav>
+            <aside class="right_sidebar">
+                <ul>
+                    <li>
+                        <h3 id="nameplay1">Sons Para Codar</h3>
+                    </li>
+                    <li>
+                        <iframe id="play1" width="426" height="240" src="https://www.youtube.com/embed/videoseries?si=5o0vRiM3SoMgMDu9&amp;list=PLzKx-Dn6c01uP1R7X85pOD_v8i5mGugKW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </li>
+                    <li>
+                        <h3 id="nameplay2">Estudo e suporte</h3>
+                    </li>
+                    <li>
+                        <iframe id="play2" width="426" height="240" src="https://www.youtube.com/embed/videoseries?si=vPZ3cnuXwfDvGaff&amp;list=PLzKx-Dn6c01uXs6ImP3lbF2Z-6AHXKo_5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </li>
+                </ul>
+            </aside>
+        </nav>
+    </div>
+    
+</body>
+</html>
