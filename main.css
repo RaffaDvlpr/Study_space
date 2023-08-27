@@ -38,10 +38,13 @@ body>header {
     border-radius: 6px;
 }
 
-.heading h2 {
-    padding-top: 24px;
-    padding-bottom: 8px;
-    font-size: 36px;
+.heading input {
+    padding: 2px;
+    font-size: 24px;
+    border-radius: 16px;
+    font-family: 'quicksand';
+    margin: 8px;
+    display: flex;
 }
 
 .left_sidebar ul {
