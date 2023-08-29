@@ -22,38 +22,82 @@
         <nav>
             <aside class="left_sidebar">
                 <ul>
-                    <h3 for="notes">Anotações</h3>
-                    <textarea cols="42" rows="14"></textarea>
+                    <h3 for="notes2">Anotações</h3>
+                    <textarea id="notes2" cols="36" rows="14"></textarea>
                 </ul>
             </aside>
         </nav>
         <div class="heading">
             <div class="linha_superior_central">
-                <input placeholder="    Cole a URL para estudo" type="text" style="width: 620px;" />
+                <input id="urlInputc" placeholder="    Cole a URL completa para estudo (com https)" type="text" style="width: 480px;" />
+                <button id="updateButtonc" style="height: 30px;">Atualizar</button>
             </div>
-            <iframe width="640" height="401" src="https://lms.ebaconline.com.br/lesson/01cd7ea9-2fea-444a-8eeb-b3c4006195f1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <label id="labelnotes" for="notes">Anotações</label>
-            <textarea id="notes" cols="82" rows="10"></textarea>
+            <iframe id="videoFramec" width="640" height="401" src="https://lms.ebaconline.com.br/lesson/01cd7ea9-2fea-444a-8eeb-b3c4006195f1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <label id="labelnotesc" for="notesc">Anotações</label>
+            
+            <textarea id="notesc" cols="80" rows="9">>>> Se for colar links do youtube:
+
+1. se for uma playlist clique em compartilhar, depois em "< >" e no link copie apenas src="copie apenas essa parte"
+                
+2. se for um só video retire do link a parte '/watch?v=' e adicione '/embed/' no lugar"</textarea>
+
         </div>
         <nav>
             <aside class="right_sidebar">
                 <ul>
-                    <li>
-                        <h3 id="nameplay1">Sons Para Codar</h3>
+                    <li class="blockplay1">
+                        <h3 id="nameplay1">Músicas</h3>
+                        <input id="urlInputru" placeholder="  Cole a URL completa" type="text" style="width: 200px;" />
+                        <button id="updateButtonru">Atualizar</button>
                     </li>
                     <li>
-                        <iframe id="play1" width="426" height="240" src="https://www.youtube.com/embed/videoseries?si=5o0vRiM3SoMgMDu9&amp;list=PLzKx-Dn6c01uP1R7X85pOD_v8i5mGugKW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe id="videoFrameru" width="426" height="240" src="https://www.youtube.com/embed/videoseries?si=5o0vRiM3SoMgMDu9&amp;list=PLzKx-Dn6c01uP1R7X85pOD_v8i5mGugKW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </li>
+                    <li class="blockplay2">
+                        <h3 id="nameplay2">Estudo Yt</h3>
+                        <input id="urlInputrd" placeholder="  Cole a URL completa" type="text" style="width: 200px;" />
+                        <button id="updateButtonrd">Atualizar</button>
                     </li>
                     <li>
-                        <h3 id="nameplay2">Estudo e suporte</h3>
-                    </li>
-                    <li>
-                        <iframe id="play2" width="426" height="240" src="https://www.youtube.com/embed/videoseries?si=vPZ3cnuXwfDvGaff&amp;list=PLzKx-Dn6c01uXs6ImP3lbF2Z-6AHXKo_5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe id="videoFramerd" width="426" height="240" src="https://www.youtube.com/embed/videoseries?si=vPZ3cnuXwfDvGaff&amp;list=PLzKx-Dn6c01uXs6ImP3lbF2Z-6AHXKo_5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </li>
                 </ul>
             </aside>
         </nav>
     </div>
     
+    <script>
+        const urlInputc = document.getElementById('urlInputc');
+        const updateButtonc = document.getElementById('updateButtonc');
+        const videoFramec = document.getElementById('videoFramec');
+
+        updateButtonc.addEventListener('click', () => {
+            const newSrc = urlInputc.value;
+            videoFramec.src = newSrc;
+        });
+    </script>
+
+    <script>
+        const urlInputru = document.getElementById('urlInputru');
+        const updateButtonru = document.getElementById('updateButtonru');
+        const videoFramru = document.getElementById('videoFrameru');
+
+        updateButtonru.addEventListener('click', () => {
+            const newSrc = urlInputru.value;
+            videoFrameru.src = newSrc;
+        });
+    </script>
+
+    <script>
+        const urlInputrd = document.getElementById('urlInputrd');
+        const updateButtonrd = document.getElementById('updateButtonrd');
+        const videoFramrd = document.getElementById('videoFramerd');
+
+        updateButtonrd.addEventListener('click', () => {
+            const newSrc = urlInputrd.value;
+            videoFramerd.src = newSrc;
+        });
+    </script>
+
 </body>
 </html>

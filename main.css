@@ -38,13 +38,31 @@ body>header {
     border-radius: 6px;
 }
 
+.linha_superior_central {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .heading input {
-    padding: 2px;
-    font-size: 24px;
+    padding: 8px;
+    font-size: 14px;
     border-radius: 16px;
     font-family: 'quicksand';
     margin: 8px;
     display: flex;
+}
+
+.heading button {
+    padding: 8px;
+    font-family: 'quicksand';
+    font-weight: 500;
+}
+
+.heading button:hover {
+    padding: 8px;
+    color: aliceblue;
+    background-color: #ff0808;
 }
 
 .left_sidebar ul {
@@ -59,13 +77,13 @@ body>header {
     align-items: center;
 }
 
-#labelnotes {
+#labelnotesc {
     padding-top: 10px;
     padding-bottom: 8px;
 }
 
-#notes {
-    padding-bottom: 10x;
+#notesc {
+    padding: 8px 8px;
     border-radius: 6px;
 }
 
@@ -81,14 +99,32 @@ body>header {
     align-items: center;
 }
 
+.blockplay1{
+    display: flex;
+    flex-direction: row;
+}
+
+.blockplay1 input, button{
+    margin: 10px 0px 10px 10px;
+}
+
 #nameplay1 {
     padding-top: 10px;
     padding-bottom: 8px;
 }
 
-#play1 {
+#videoframeru {
     padding-bottom: 10x;
     border-radius: 20px;
+}
+
+.blockplay2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.blockplay2 input, button {
+    margin: 10px 0px 10px 10px;
 }
 
 #nameplay2 {
@@ -96,7 +132,7 @@ body>header {
     padding-bottom: 8px;
 }
 
-#play1, #play2 {
+#videoFrameru, #videoFramerd {
     padding-bottom: 10px;
     border-radius: 20px;
 }
