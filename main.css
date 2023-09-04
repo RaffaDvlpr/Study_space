@@ -60,7 +60,6 @@ body>header {
 }
 
 .heading button:hover {
-    padding: 8px;
     color: aliceblue;
     background-color: #ff0808;
 }
@@ -106,6 +105,17 @@ body>header {
 
 .blockplay1 input, button{
     margin: 10px 0px 10px 10px;
+    font-family: 'quicksand';
+    font-weight: 500;
+}
+
+.blockplay1 button{
+    padding: 0px 4px;
+}
+
+.blockplay1 button:hover {
+    color: aliceblue;
+    background-color: #ff0808;
 }
 
 #nameplay1 {
@@ -125,6 +135,17 @@ body>header {
 
 .blockplay2 input, button {
     margin: 10px 0px 10px 10px;
+    font-family: 'quicksand';
+    font-weight: 500;
+}
+
+.blockplay2 button{
+    padding: 0px 4px;
+}
+
+.blockplay2 button:hover {
+    color: aliceblue;
+    background-color: #ff0808;
 }
 
 #nameplay2 {
@@ -135,4 +156,8 @@ body>header {
 #videoFrameru, #videoFramerd {
     padding-bottom: 10px;
     border-radius: 20px;
+}
+
+textarea {
+    resize: none;
 }
